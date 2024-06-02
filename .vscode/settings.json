@@ -1,0 +1,9 @@
+{
+    "files.insertFinalNewline": true,
+    "files.autoSave": "afterDelay",
+    "[php]": {
+        "editor.defaultFormatter": "junstyle.php-cs-fixer",
+        "editor.formatOnSave": true
+    },
+    "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar"
+}
