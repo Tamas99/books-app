@@ -1,0 +1,4 @@
+# translations/messages+intl-icu.en.yaml
+published_at: 'Published at: {publication_date, date, full} - {publication_date, time, short}'
+
+value_of_object: 'This artifact is worth {value, number, currency}'

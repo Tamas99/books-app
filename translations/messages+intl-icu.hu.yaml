@@ -1,0 +1,6 @@
+# translations/messages+intl-icu.hu.yaml
+published_at: 'Publikálva ekkor: {publication_date, date, full} - {publication_date, time, long}'
+
+progress: '{progress, number, percent} a munkából kész'
+
+value_of_object: 'A műalkotás értéke mindössze {value, number, currency}'
