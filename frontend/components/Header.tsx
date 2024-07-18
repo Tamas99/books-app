@@ -10,10 +10,6 @@ const links = [
         url: '/',
     },
     {
-        title: 'Book List',
-        url: '/',
-    },
-    {
         title: 'Create Book',
         url: '/create-book',
     },
@@ -24,9 +20,9 @@ export default function Header() {
 
     return (
         <>
-            <header className="flex flex-wrap items-center justify-between gap-4 border p-6 ml-40 mr-40">
+            <header className="flex flex-wrap items-center justify-between gap-4 p-6 ml-40 mr-40">
                 <nav>
-                    <ul className="flex flex-wrap items-center justify-center gap-10">
+                    <ul className="flex flex-wrap items-center gap-10">
                         {links.map((link) => (
                             <li key={link.url}>
                                 <Link
@@ -41,7 +37,10 @@ export default function Header() {
                         ))}
                     </ul>
                 </nav>
-                <p className="position-right">Search</p>
+                <input 
+                    className="w-40" 
+                    placeholder="Search"
+                />
             </header>
         </>
     );

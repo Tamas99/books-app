@@ -12,7 +12,7 @@
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-end-rgb: 80, 80, 80;
   }
 }
 
@@ -39,7 +39,7 @@ body {
 
   input,
   textarea {
-    @apply bg-transparent py-3 px-6 text-white placeholder-neutral-600 border border-neutral-600 rounded-lg w-full;
+    @apply bg-transparent py-3 px-6 text-white placeholder-neutral-400 border border-neutral-600 rounded-lg w-full;
   }
 }
 

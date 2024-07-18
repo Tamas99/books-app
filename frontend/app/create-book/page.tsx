@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { format } from 'date-fns';
+import { Button, Container } from 'react-bootstrap';
 
 export default function NewBook() {
     const [bookTitle, setBookTitle] = useState('');
@@ -63,8 +64,8 @@ export default function NewBook() {
 
             <section className="flex items-center justify-center px-6 py-10 lg:py-20">
                 <form onSubmit={handleSubmit} className="space-y-8">
-                    <div className="grid gap-4 md:grid-cols-2">
-                        <div>
+                    <Container className="grid gap-4 md:grid-cols-2">
+                        <Container>
                             <label htmlFor="book-title">Book Title</label>
                             <input
                                 type="text"
@@ -75,9 +76,9 @@ export default function NewBook() {
                                 value={bookTitle}
                                 onChange={(e) => setBookTitle(e.target.value)}
                             />
-                        </div>
+                        </Container>
 
-                        <div>
+                        <Container>
                             <label htmlFor="book-author">Book Author</label>
                             <input
                                 type="text"
@@ -88,11 +89,11 @@ export default function NewBook() {
                                 value={bookAuthor}
                                 onChange={(e) => setBookAuthor(e.target.value)}
                             />
-                        </div>
-                    </div>
+                        </Container>
+                    </Container>
 
-                    <div className="grid gap-4 md:grid-cols-2">
-                        <div>
+                    <Container className="grid gap-4 md:grid-cols-2">
+                        <Container>
                             <label htmlFor="book-date">Book Creation Date</label>
                             <input
                                 type="date"
@@ -103,9 +104,9 @@ export default function NewBook() {
                                 value={bookCreatedDate}
                                 onChange={(e) => setBookDate(e.target.value)}
                             />
-                        </div>
+                        </Container>
 
-                        <div>
+                        <Container>
                             <label htmlFor="book-isbn">Book ISBN</label>
                             <input
                                 type="text"
@@ -116,10 +117,10 @@ export default function NewBook() {
                                 value={bookISBN}
                                 onChange={(e) => setBookISBN(e.target.value)}
                             />
-                        </div>
-                    </div>
+                        </Container>
+                    </Container>
 
-                    <div>
+                    <Container>
                         <label htmlFor="book-description">Book Description</label>
                         <textarea
                             name="book-description"
@@ -131,15 +132,15 @@ export default function NewBook() {
                             value={bookDescription}
                             onChange={(e) => setBookDescription(e.target.value)}
                         ></textarea>
-                    </div>
+                    </Container>
 
-                    <button
+                    <Button
                         onClick={handleSubmit}
                         type="submit"
                         className="w-full rounded-lg bg-white px-6 py-3 font-semibold text-neutral-900 outline-none hover:animate-pulse"
                     >
                         Create new book
-                    </button>
+                    </Button>
                 </form>
             </section>
         </>
