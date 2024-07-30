@@ -7,7 +7,6 @@ use App\DTO\Outgoing\BookDetailsDto;
 use App\DTO\Outgoing\BookListDto;
 use App\DTO\Outgoing\BookPageDto;
 use App\Entity\Book;
-use DateTime;
 use Doctrine\ORM\Tools\Pagination\Paginator;
 
 class BookMapper
@@ -73,7 +72,7 @@ class BookMapper
         $book = new Book();
         $book->setTitle($bookCreationDto->title);
         $book->setAuthor($bookCreationDto->author);
-        $book->setCreatedDate(new DateTime($bookCreationDto->createdDate));
+        $book->setCreatedDate(\DateTime::createFromFormat('Y-m-d H:i:s', $bookCreationDto->createdDate));
         $book->setIsbn($bookCreationDto->isbn);
         $book->setDescription($bookCreationDto->description);
 

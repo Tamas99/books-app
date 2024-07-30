@@ -11,3 +11,11 @@ export interface BookDto {
     author: string;
     isbn: string;
 }
+
+export interface BookCreationDto {
+    title: string;
+    author: string;
+    isbn: string;
+    createdDate: string;
+    description: string;
+}

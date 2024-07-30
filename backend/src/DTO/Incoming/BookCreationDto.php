@@ -20,8 +20,9 @@ class BookCreationDto
     #[Assert\NotNull]
     public string $isbn;
 
-    #[Assert\DateTime]
+    #[Assert\Type(type: 'string')]
     #[Assert\NotNull]
+    #[Assert\DateTime(format: 'Y-m-d H:i:s')]
     public string $createdDate;
 
     #[Assert\Type(type: 'string')]

@@ -1,3 +1,5 @@
+import 'bootstrap/dist/css/bootstrap.css';
+
 import type { Metadata } from 'next';
 import './globals.css';
 import Header from '@/components/Header'
